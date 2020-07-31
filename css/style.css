@@ -1,0 +1,24 @@
+
+.main-container{
+	padding: 0;
+	}
+.main-container .navbar{
+	padding: 10px 60px;
+	}
+.main-container .navbar .nav-tabs{
+	border: 0;
+	}
+.main-container .nav-link{
+	margin-right: 15px;
+	border-radius: 0;
+	border: 0;
+	transition: ease-in-out all 0.2s;
+	}
+.main-container .nav-link.active{
+	background-color: transparent;
+	border-radius: 0;
+	border: 0;
+	}
+.main-container .nav-link:hover{
+	transform: scale(1.1);
+	}
