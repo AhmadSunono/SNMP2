@@ -113,7 +113,7 @@
 			</div>
 			<div class="tab-pane fade second-page" id="second" role="tabpanel" aria-labelledby="second-tab">
 				<div class="container mt-5">
-					<table id="example" class="table table-striped table-bordered" style="width:100%">
+					<table id="secondTable" class="table table-striped table-bordered" style="width:100%">
 						<thead>
 						<tr>
 							<th>Name</th>
@@ -624,35 +624,35 @@
 						<tbody>
 						<tr>
 							<td>1</td>
-							<td ></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>2</td>
-							<td ></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>3</td>
-							<td ></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>4</td>
-							<td ></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>5</td>
-							<td ></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>6</td>
-							<td ></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>7</td>
-							<td ></td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>8</td>
-							<td ></td>
+							<td></td>
 						</tr>
 						</tbody>
 					</table>
@@ -669,12 +669,32 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script>
 	$(document).ready(function () {
-		$('#example').DataTable();
+		$('#secondTable').DataTable();
+
+		//Second Page Handle Select Change
+		$('#imad').on('change', function (event) {
+			console.log(this.value)
+
+			//	AJAX
+			// $.ajax({
+			// 	url: "",
+			// 	method: "",
+			// 	dataType: "html"
+			// })
+			// 	.done(function (msg) {
+			//
+			// 		}
+			// 	).fail(function (jqXHR, textStatus) {
+			// 	alert("Request failed: " + textStatus);
+			// });
+
+		})
+
 	});
 </script>
 <script>
-	$(function(){
-		$('#potatoForm').on('submit', function(event){
+	$(function () {
+		$('#potatoForm').on('submit', function (event) {
 			event.preventDefault();
 
 			console.log($("#nodeName").val());
